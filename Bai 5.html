@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Daonguoc(n){
+        n = n.toString()
+        console.log(n)
+        n = n.split('')
+        n = n.reverse()
+        n = n.join('');
+        console.log(n)
+        n =parseInt(n);
+        console.log(n)
+        return n;
+    }
+
+   document.write("Cac so dao nguoc lai la : " + Daonguoc(456))
+</script>
+</body>
+</html>

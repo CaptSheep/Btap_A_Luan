@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function checkSNT(SNT) {
+        for ( let i = 2; i < SNT; i++) {
+            if (SNT % i == 0) {
+                return false;
+            }
+        }
+        return true
+    }
+    let SNT = +prompt("Nhap so can kiem tra")
+    for (  let i = 2 ; i <= SNT; i ++ ){
+        if(checkSNT(i)){
+            document.write( i + ' ')
+        }
+    }
+
+</script>
+</body>
+</html>
